@@ -1,0 +1,41 @@
+$num-of-tabs: 2;
+
+.product_tabs {
+    margin: 40px 0 0 0;
+}
+
+.tabs__radio {
+    position: absolute;
+    left: -9999px;
+}
+
+.tabs__label {
+    background-color: #aaa;
+    color: #000;
+    cursor: pointer;
+    padding: 5px 20px;
+}
+
+.tabs__content {
+    display: none;
+}
+
+@for $i from 1 through $num-of-tabs {
+    .tabs__radio:nth-of-type(#{$i}):checked {
+        & ~ .tabs__label:nth-of-type(#{$i}) {
+            background-color: #aaa;
+        }
+        & ~ .tabs__content:nth-of-type(#{$i}) {
+            display: block;
+        }
+    }
+    .tabs__radio:nth-of-type(#{$i}):disabled {
+        & ~ .tabs__label:nth-of-type(#{$i}):not(.tabs__label--hide) {
+            color: #eee;
+            cursor: no-drop;
+        }
+        & ~ .hide-if-disabled:nth-of-type(#{$i}) {
+            display: none;
+        }
+    }
+}

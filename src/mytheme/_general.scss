@@ -1,0 +1,24 @@
+$primary-color: #98313b;
+
+body {
+    padding: 0;
+}
+
+.holder {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
