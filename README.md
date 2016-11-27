@@ -1,7 +1,18 @@
 ## Olá ##
 **Brasil | Danilo Matos | Teste prático Front End**
+----------
+27/11/2016.
+
+Hoje, domingo dia 27/11/2016 voltei a mexer tentando aplicar tudo o que foi requisitado.
+
+Acredito que tive uma evolução desde o commit anterior, nesse commit deixei funcionando a parte do Chico UI.
+
+Tenho ainda com dificuldades de uso do GIT e GULP já que não trabalhei com eles anteriormente, mesmo assim corri atrás para tentar entregar algo um mínimo aceitável.
+
+Espero ter melhorado a qualidade da entrega.
 
 ----------
+25/11/2016.
 Recebi hoje o email da *Fernanda Daniel* por volta das 15h com um prazo para domingo.
 
 Tenho certeza que meu teste deixou muito a desejar visto que nunca trabalhei com NPM, GULP e desconheço por completo a Chico UI citada no documento.
