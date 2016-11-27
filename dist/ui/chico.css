@@ -1,3 +1,11 @@
+/*!
+ * Chico UI v2.0.9
+ * http://chico-ui.com.ar/
+ *
+ * Copyright (c) 2016, MercadoLibre.com
+ * Released under the MIT license.
+ * http://chico-ui.com.ar/license
+ */
 /**
  * Reset
  * @based on: Eric Meyer
@@ -91,7 +99,7 @@ html {
   /* 2 */
   -ms-text-size-adjust: 100%;
   /* 2 */
-  -webkit-tap-highlight-color: transparent
+  -webkit-tap-highlight-color: transparent;
   /* 3 */
 }
 
@@ -128,17 +136,18 @@ p + p {
 @font-face {
   font-family: 'icons';
   /*
-   * IE9 Compat Modes
-   * IE6-IE8
-   * Modern Browsers
-   * Safari, Android, iOS
-   * Legacy iOS
-   */
+     * IE9 Compat Modes
+     * IE6-IE8
+     * Modern Browsers
+     * Safari, Android, iOS
+     * Legacy iOS
+     */
   src: url("../assets/icons.eot");
   src: url("../assets/icons.eot?#iefix") format("embedded-opentype"), url("../assets/icons.woff") format("woff"), url("../assets/icons.ttf") format("truetype"), url("../assets/icons.svg#icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 [class*='ch-icon-'] {
   text-align: center;
   display: inline-block;
@@ -489,6 +498,7 @@ p + p {
 .ch-actions {
   margin: 20px 0 0 0;
 }
+
 .ch-actions a {
   margin: 0 0 0 15px;
 }
@@ -578,11 +588,13 @@ a:focus {
   font-size: 16px;
   font-weight: bold;
 }
+
 .ch-price sup {
   font-size: 10px;
   vertical-align: text-top;
   line-height: 1em;
 }
+
 .ch-price span {
   color: #999;
   font-size: 13px;
@@ -604,6 +616,7 @@ a:focus {
   background-image: -webkit-linear-gradient( top , transparent 15%, rgba(100, 100, 100, 0.1) 100%);
   background-image: -webkit-linear-gradient(top, transparent 15%, rgba(100, 100, 100, 0.1) 100%);
   background-image: linear-gradient(to bottom, transparent 15%, rgba(100, 100, 100, 0.1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a646464', GradientType=0);
   border: 1px solid #dedede;
   border-radius: 3px;
   cursor: pointer;
@@ -618,7 +631,9 @@ a:focus {
   position: absolute;
   right: 10px;
   top: 10px;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   z-index: 1;
 }
 
@@ -627,6 +642,7 @@ a:focus {
   background-color: #bf0602;
   background-image: -webkit-linear-gradient(#bf0602, #8f2f00);
   background-image: linear-gradient(#bf0602, #8f2f00);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbf0602', endColorstr='#ff8f2f00', GradientType=0);
 }
 
 .ch-close:before {
@@ -646,6 +662,7 @@ a:focus {
   background-color: #fA5900;
   background-image: -webkit-linear-gradient(#fA5900, #ca0c02);
   background-image: linear-gradient(#fA5900, #ca0c02);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffa5900', endColorstr='#ffca0c02', GradientType=0);
   text-decoration: none;
 }
 
@@ -672,6 +689,7 @@ a:focus {
   color: #FFF;
   background-color: #F5CC00;
 }
+
 [class*='ch-badge'].ch-icon-warning-sign {
   color: #FFF;
 }
@@ -708,6 +726,7 @@ a:focus {
   position: relative;
   padding-left: 32px;
 }
+
 .ch-box-icon [class*='ch-icon-'] {
   position: absolute;
   top: 7px;
@@ -737,6 +756,7 @@ a:focus {
 .ch-box-error {
   background-color: #f5e6e6;
 }
+
 .ch-box-error a:visited {
   color: #03b;
 }
@@ -764,6 +784,7 @@ a:focus {
 .ch-box-info {
   background-color: #e4f2f9;
 }
+
 .ch-box-info a {
   text-decoration: underline !important;
 }
@@ -783,7 +804,9 @@ a:focus {
 .ch-box {
   background-color: #f0f0f0;
   background-image: -webkit-linear-gradient(top, #f0f0f0, #fff 25px, #fff);
+  background-image: -webkit-linear-gradient(top,#f0f0f0, #fff 25px, #fff);
   background-image: linear-gradient(to bottom,#f0f0f0, #fff 25px, #fff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0f0f0', endColorstr='#ffffffff', GradientType=0);
 }
 
 /**
@@ -885,6 +908,7 @@ a.ch-btn {
   background-color: #3e52a1;
   background-image: -webkit-linear-gradient(#3e52a1, #2d3277);
   background-image: linear-gradient(#3e52a1, #2d3277);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3e52a1', endColorstr='#ff2d3277', GradientType=0);
   box-shadow: 0 1px 0 #7a89e8 inset;
   border: 1px solid #2d3277;
   color: #fff;
@@ -897,6 +921,7 @@ a.ch-btn-skin {
   background-color: #cce3f7;
   background-image: -webkit-linear-gradient(#cce3f7, #aaD0ef);
   background-image: linear-gradient(#cce3f7, #aaD0ef);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcce3f7', endColorstr='#ffaad0ef', GradientType=0);
   border: 1px solid #79a8c7;
   box-shadow: 0 1px 0 #e5f2fc inset;
   color: #476274;
@@ -914,6 +939,7 @@ a.ch-btn-skin {
   background-color: #4355d2;
   background-image: -webkit-linear-gradient(#4355d2, #2f33ae);
   background-image: linear-gradient(#4355d2, #2f33ae);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4355d2', endColorstr='#ff2f33ae', GradientType=0);
   box-shadow: 0 1px 0 #7a89e8 inset;
 }
 
@@ -921,6 +947,7 @@ a.ch-btn-skin {
   background-color: #dcecfb;
   background-image: -webkit-linear-gradient(#dcecfb, #c5dff5);
   background-image: linear-gradient(#dcecfb, #c5dff5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdcecfb', endColorstr='#ffc5dff5', GradientType=0);
   box-shadow: 0 1px 0 #e5f2fc inset;
 }
 
@@ -929,6 +956,7 @@ a.ch-btn-skin {
   background-color: #292f66;
   background-image: -webkit-linear-gradient(#292f66, #202388);
   background-image: linear-gradient(#292f66, #202388);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff292f66', endColorstr='#ff202388', GradientType=0);
   box-shadow: 0 1px 6px #141452 inset;
   border-color: #181e39;
 }
@@ -937,6 +965,7 @@ a.ch-btn-skin {
   background-color: #a2c9e1;
   background-image: -webkit-linear-gradient(#a2c9e1, #7ab6dc);
   background-image: linear-gradient(#a2c9e1, #7ab6dc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa2c9e1', endColorstr='#ff7ab6dc', GradientType=0);
   box-shadow: 0 1px 6px #476274 inset;
   border-color: #79a8c7;
 }
@@ -968,12 +997,14 @@ input.ch-btn-small::-moz-focus-inner {
   background-color: #f9f9f9;
   background-image: -webkit-linear-gradient(#f9f9f9, #dedede);
   background-image: linear-gradient(#f9f9f9, #dedede);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#ffdedede', GradientType=0);
   border: 1px solid #cdcdcd !important;
   /* important for links */
   box-shadow: 0 1px 1px #fff inset;
   color: #999 !important;
   /* important for links */
   cursor: not-allowed;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   opacity: 0.5;
   text-shadow: none;
   -ms-touch-action: none;
@@ -1025,9 +1056,11 @@ a.ch-btn-large:focus {
   box-shadow: 2px 2px 2px rgba(100, 100, 100, 0.2);
   z-index: 1000;
 }
+
 .ch-underlay + .ch-popover {
   z-index: 1050;
 }
+
 .ch-popover-wrapper {
   display: inline-block;
   position: relative;
@@ -1084,9 +1117,11 @@ a.ch-btn-large:focus {
   bottom: 100%;
   border-bottom-style: solid;
 }
+
 .ch-cone[data-side=bottom] .ch-popover-content:before {
   border-bottom-color: #dedede;
 }
+
 .ch-cone[data-side=bottom] .ch-popover-content:after {
   border-bottom-color: #fff;
 }
@@ -1100,9 +1135,11 @@ a.ch-btn-large:focus {
   top: 100%;
   border-top-style: solid;
 }
+
 .ch-cone[data-side=top] .ch-popover-content:before {
   border-top-color: #dedede;
 }
+
 .ch-cone[data-side=top] .ch-popover-content:after {
   border-top-color: #fff;
 }
@@ -1116,9 +1153,11 @@ a.ch-btn-large:focus {
   right: 100%;
   border-right-style: solid;
 }
+
 .ch-cone[data-side=right] .ch-popover-content:before {
   border-right-color: #dedede;
 }
+
 .ch-cone[data-side=right] .ch-popover-content:after {
   border-right-color: #fff;
 }
@@ -1132,9 +1171,11 @@ a.ch-btn-large:focus {
   left: 100%;
   border-left-style: solid;
 }
+
 .ch-cone[data-side=left] .ch-popover-content:before {
   border-left-color: #dedede;
 }
+
 .ch-cone[data-side=left] .ch-popover-content:after {
   border-left-color: #fff;
 }
@@ -1221,19 +1262,24 @@ a.ch-btn-large:focus {
 /* Transitions */
 .ch-popover.ch-hide.ch-fx {
   visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
 }
+
 .ch-popover.ch-fx.ch-fx-fadeIn {
   visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   opacity: 1;
   -webkit-transition: opacity .3s ease-out;
-          transition: opacity .3s ease-out;
+  transition: opacity .3s ease-out;
 }
+
 .ch-popover.ch-fx.ch-fx-fadeOut {
   visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
   -webkit-transition: opacity .3s ease-out, visibility 0s linear .3s;
-          transition: opacity .3s ease-out, visibility 0s linear .3s;
+  transition: opacity .3s ease-out, visibility 0s linear .3s;
 }
 
 /**
@@ -1243,29 +1289,35 @@ a.ch-btn-large:focus {
   position: relative;
   display: inline-block;
 }
+
 .ch-calendar caption {
   background-color: #fff;
   background-image: -webkit-linear-gradient(#fff, #f0f0f0);
   background-image: linear-gradient(#fff, #f0f0f0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff0f0f0', GradientType=0);
   font-size: 13px;
   line-height: 28px;
   text-shadow: 0 1px 0 #fff;
   border-bottom: none;
 }
+
 .ch-calendar thead {
   border-weight: 0 1px;
 }
+
 .ch-calendar td {
   cursor: default;
   height: 26px;
   line-height: 26px;
   width: 14.28%;
 }
+
 .ch-calendar th {
   font-size: 11px;
   font-weight: normal;
   width: 14.28%;
 }
+
 .ch-calendar caption,
 .ch-calendar thead,
 .ch-calendar td {
@@ -1369,7 +1421,7 @@ a.ch-btn-large:focus {
 .ch-carousel-list {
   overflow: hidden;
   -webkit-transition: all .8s ease;
-          transition: all .8s ease;
+  transition: all .8s ease;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -1380,7 +1432,7 @@ a.ch-btn-large:focus {
 
 .ch-carousel ul.ch-carousel-nofx {
   -webkit-transition: none;
-          transition: none;
+  transition: none;
 }
 
 /* Both are the same elements, but it can apply styles before the component initialization */
@@ -1389,7 +1441,7 @@ a.ch-btn-large:focus {
   display: inline-block;
   float: left;
   /* Fixes the inline-block inner space between li elements */
-  box-sizing: border-box
+  box-sizing: border-box;
   /* Fixes the width when item has a border and/or padding */
 }
 
@@ -1433,6 +1485,7 @@ a.ch-btn-large:focus {
 
 .ch-carousel-prev:hover,
 .ch-carousel-next:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
   opacity: 0.7;
 }
 
@@ -1448,6 +1501,7 @@ a.ch-btn-large:focus {
   text-align: center;
   width: 100%;
 }
+
 .ch-carousel-pages span {
   background-color: #f0f0f0;
   border-radius: 100%;
@@ -1515,8 +1569,10 @@ table {
   background-color: #f9f9f9;
   background-image: -webkit-linear-gradient(#f9f9f9, #e9e9e9);
   background-image: linear-gradient(#f9f9f9, #e9e9e9);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#ffe9e9e9', GradientType=0);
   cursor: pointer;
 }
+
 .ch-datagrid-controls th:hover {
   background: #f9f9f9;
 }
@@ -1535,6 +1591,7 @@ table {
 .ch-datagrid-selected .ch-datagrid-desc {
   float: right;
 }
+
 .ch-datagrid-selected .ch-datagrid-asc:after,
 .ch-datagrid-selected .ch-datagrid-desc:after {
   font-family: icons;
@@ -1607,10 +1664,12 @@ table {
 .ch-datepicker .ch-calendar {
   display: block;
 }
+
 .ch-datepicker .ch-calendar caption,
 .ch-datepicker .ch-calendar thead {
   border: none;
 }
+
 .ch-datepicker .ch-calendar caption {
   border-bottom: 1px solid #dedede;
   margin: 0;
@@ -1657,12 +1716,14 @@ table {
   position: relative;
   display: inline-block;
   padding: 5px 2em 5px 8px;
-  z-index: 1011
+  z-index: 1011;
   /* Trigger Down icon */
 }
+
 .ch-modal .ch-dropdown-trigger {
   z-index: 1101;
 }
+
 .ch-dropdown-trigger:after {
   font-family: icons;
   content: "\f0d7";
@@ -1684,13 +1745,15 @@ table {
   white-space: nowrap;
   box-shadow: 2px 2px 2px rgba(100, 100, 100, 0.2);
   border-radius: 0 5px 5px;
-  z-index: 1010
+  z-index: 1010;
   /* Container */
   /* List of links */
 }
+
 .ch-modal .ch-dropdown {
   z-index: 1100;
 }
+
 .ch-dropdown menu a {
   color: #000;
   display: block;
@@ -1710,6 +1773,7 @@ table {
   background-color: #a2c9e1;
   background-image: -webkit-linear-gradient(#a2c9e1, #7ab6dc);
   background-image: linear-gradient(#a2c9e1, #7ab6dc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa2c9e1', endColorstr='#ff7ab6dc', GradientType=0);
   box-shadow: 0 1px 6px rgba(71, 98, 116, 0.6);
   border-radius: 3px 3px 0 0;
 }
@@ -1731,12 +1795,14 @@ table {
   border-radius: 0;
   color: #03b;
   text-decoration: none;
-  padding: 0 28px 0 13px
+  padding: 0 28px 0 13px;
   /* Trigger Actived */
 }
+
 .ch-dropdown-trigger-skin:after {
   color: #999;
 }
+
 .ch-dropdown-trigger-skin :active {
   color: #00d;
 }
@@ -1779,9 +1845,10 @@ table {
   color: #03b;
   display: inline;
   line-height: 20px;
-  padding: 0
+  padding: 0;
   /* Interaction of list */
 }
+
 .ch-dropdown-skin menu a:focus {
   background: none;
   text-decoration: underline;
@@ -1805,12 +1872,15 @@ table {
   padding: 0 0 0 16px;
   font-size: 13px;
 }
+
 .ch-expandable-trigger:active {
   color: #00D;
 }
+
 .ch-expandable-trigger:visited {
   color: #809;
 }
+
 .ch-expandable-trigger:hover {
   text-decoration: underline;
 }
@@ -1846,19 +1916,23 @@ table {
 .ch-expandable-container.ch-hide.ch-fx {
   visibility: hidden;
 }
+
 .ch-expandable-container.ch-fx-slideDown {
   overflow: hidden;
   -webkit-transition: height .3s ease-out, padding-top .3s ease-out, padding-bottom .3s ease-out;
-          transition: height .3s ease-out, padding-top .3s ease-out, padding-bottom .3s ease-out;
+  transition: height .3s ease-out, padding-top .3s ease-out, padding-bottom .3s ease-out;
 }
+
 .ch-expandable-container.ch-fx-slideUp {
   overflow: hidden;
   -webkit-transition: height .3s ease-in, padding-top .3s ease-in, padding-bottom .3s ease-in, visibility 0s linear .3s;
-          transition: height .3s ease-in, padding-top .3s ease-in, padding-bottom .3s ease-in, visibility 0s linear .3s;
+  transition: height .3s ease-in, padding-top .3s ease-in, padding-bottom .3s ease-in, visibility 0s linear .3s;
 }
+
 .ch-expandable-container.ch-fx.ch-fx-slideDown {
   visibility: visible;
 }
+
 .ch-expandable-container.ch-fx.ch-fx-slideUp {
   visibility: hidden;
 }
@@ -1893,7 +1967,7 @@ textarea {
   /* 1 */
   font-size: 100%;
   /* 2 */
-  margin: 0
+  margin: 0;
   /* 3 */
 }
 
@@ -1919,7 +1993,8 @@ input[type="search"] {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1944,6 +2019,7 @@ select[multiple],
   border-radius: 3px;
   padding: 6px;
 }
+
 input[type="text"]:focus,
 input[type="url"]:focus,
 input[type="email"]:focus,
@@ -1986,10 +2062,12 @@ input[readonly]:focus {
 }
 
 .ch-form-icon-inner {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
   opacity: 0.3;
 }
 
 .ch-form-icon-input:focus + .ch-form-icon-inner {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
   opacity: 0.7;
 }
 
@@ -2038,6 +2116,7 @@ input.ch-form-icon-input:focus {
   padding: 5px 0;
   position: relative;
 }
+
 .ch-form-row label {
   display: inline-block;
   position: relative;
@@ -2179,6 +2258,7 @@ input.ch-form-icon-input:focus {
   padding: 12px 10px;
   margin: 5px 0;
 }
+
 .ch-form-big input[type="text"]:focus,
 .ch-form-big input[type="url"]:focus,
 .ch-form-big input[type="email"]:focus,
@@ -2331,6 +2411,7 @@ select[multiple],
 .ch-list {
   margin: 0 0 10px 0;
 }
+
 .ch-list li {
   margin: 5px 0;
   padding: 2px 35px 2px 10px;
@@ -2348,13 +2429,16 @@ ol.ch-list {
 dl.ch-list {
   margin: 0 0 18px 0;
 }
+
 dl.ch-list dt,
 dl.ch-list dd {
   line-height: 18px;
 }
+
 dl.ch-list dt {
   font-weight: bold;
 }
+
 dl.ch-list dd {
   margin: 5px 0 10px 10px;
 }
@@ -2493,9 +2577,9 @@ dl.ch-list dd {
 .ch-menu .ch-expandable-container a {
   padding: 2px 15px;
   /*
-      Fix based on David Baron comment on the Firefox bug:
-      https://bugzilla.mozilla.org/show_bug.cgi?id=36854#c7
-   */
+        Fix based on David Baron comment on the Firefox bug:
+        https://bugzilla.mozilla.org/show_bug.cgi?id=36854#c7
+     */
   list-style: disc inside;
   display: list-item;
 }
@@ -2525,6 +2609,7 @@ dl.ch-list dd {
   text-align: center;
   padding: 40px;
 }
+
 .ch-modal-lite h2 {
   margin: 0;
 }
@@ -2541,20 +2626,29 @@ dl.ch-list dd {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1049;
 }
+
 .ch-underlay.ch-fx-fadein-enter, .ch-underlay.ch-fx-fadein-leave, .ch-underlay.ch-fx-slidedown-enter, .ch-underlay.ch-fx-slidedown-leave {
   -webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-          transition: opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
 .ch-underlay.ch-fx-fadein-enter, .ch-underlay.ch-fx-slidedown-enter {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
 }
+
 .ch-underlay.ch-fx-fadein-enter-active, .ch-underlay.ch-fx-slidedown-enter-active {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   opacity: 1;
 }
+
 .ch-underlay.ch-fx-fadein-leave, .ch-underlay.ch-fx-slidedown-leave {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   opacity: 1;
 }
+
 .ch-underlay.ch-fx-fadein-leave-active, .ch-underlay.ch-fx-fadein-slidedown-active {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   opacity: 0;
 }
 
@@ -2575,10 +2669,12 @@ dl.ch-list dd {
   margin: 10px 0;
   text-align: center;
 }
+
 .ch-pagination li {
   display: inline-block;
   margin: 0 4px;
 }
+
 .ch-pagination li a {
   border-radius: 3px;
   padding: 5px 8px;
@@ -2610,6 +2706,7 @@ dl.ch-list dd {
 .ch-pagination .ch-pagination-sequence a {
   border-color: #fff;
 }
+
 .ch-pagination .ch-pagination-sequence a:hover {
   border-color: #03b;
 }
@@ -2620,6 +2717,7 @@ dl.ch-list dd {
 .ch-tabs {
   margin: 10px 0;
 }
+
 .ch-tabs .ch-tabs-triggers {
   position: relative;
   top: 1px;
@@ -2629,6 +2727,7 @@ dl.ch-list dd {
   list-style: none;
   overflow: hidden;
 }
+
 .ch-tabs .ch-tabs-triggers li {
   cursor: pointer;
   display: inline;
@@ -2646,9 +2745,11 @@ dl.ch-list dd {
   background-color: #fff;
   border-radius: 5px 5px 0 0;
 }
+
 .ch-tab:hover {
   background-color: #f0f0f0;
 }
+
 .ch-tab:active {
   background-color: #f0f0f0;
 }
@@ -2659,6 +2760,7 @@ dl.ch-list dd {
   background-color: #f0f0f0;
   background-image: -webkit-linear-gradient(#f0f0f0, #fff);
   background-image: linear-gradient(#f0f0f0, #fff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0f0f0', endColorstr='#ffffffff', GradientType=0);
   border-bottom: 1px solid #fff;
   cursor: default;
   font-weight: bold;
@@ -2975,4 +3077,4 @@ dl.ch-list dd {
   display: none;
 }
 
-/*# sourceMappingURL=ui-theme.css.map */
+/*# sourceMappingURL=chico.css.map */

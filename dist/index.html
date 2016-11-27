@@ -7,8 +7,8 @@
 <head>
     <meta charset="utf-8" />
     <title>Document Title</title>
-    <link rel="stylesheet" href="css/ui-theme.css" />
-    <link rel="stylesheet" href="css/mytheme.css" />
+    <link rel="stylesheet" href="ui/chico.min.css" />
+    <link rel="stylesheet" href="ui/mytheme.min.css" />
 </head>
 <body>
 
@@ -72,34 +72,20 @@
 
                 <div class="product_similars">
                     <p class="product_similars-title">More products like this</p>
-                    <i class="arrow arrow-left"></i>
-                    <ul class="product_similars-list">
-                        <li class="product_similars-photo"></li>
-                        <li class="product_similars-photo"></li>
-                        <li class="product_similars-photo"></li>
-                    </ul>
-                    <i class="arrow arrow-right"></i>
+                    <div class="demo-carousel ch-carousel">
+                        <ul class="product_similars-list">
+                            <li class="product_similars-photo"><img src="http://placehold.it/100"></li>
+                            <li class="product_similars-photo"><img src="http://placehold.it/100"></li>
+                            <li class="product_similars-photo"><img src="http://placehold.it/100"></li>
+                            <li class="product_similars-photo"><img src="http://placehold.it/100"></li>
+                            <li class="product_similars-photo"><img src="http://placehold.it/100"></li>
+                            <li class="product_similars-photo"><img src="http://placehold.it/100"></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <div class="clearfix"></div>
-
-            <!--
-            <ul class="tablist" role="tablist">
-                <li id="tab1" class="tab" aria-controls="panel1" aria-selected="true" role="tab" tabindex="0">Prices</li>
-                <li id="tab2" class="tab" aria-controls="panel2" role="tab" aria-selected="false" tabindex="0">Features </li>
-            </ul>
-
-            <div id="panel1" class="panel" aria-labelledby="tab1" role="tabpanel" aria-hidden="false">
-                <h3 tabindex="0">Prices</h3>
-                List of prices
-            </div>
-
-            <div id="panel2" class="panel hidden" aria-labelledby="tab2" role="tabpanel" aria-hidden="true">
-                <h3 tabindex="0">Features</h3>
-                List of product features....
-            </div>
-            -->
 
             <div class="product_tabs" role="tablist">
                 <input class="tabs__radio" id="myTab1" type="radio" name="myTabs" value="1" checked>
@@ -115,5 +101,13 @@
         </section>
     </main>
 
+    <script type="text/javascript" src="https://ui.mlstatic.com/chico/tiny/0.2.3/tiny.min.js"></script>
+    <script type="text/javascript" src="ui/chico.min.js"></script>
+    <script type="text/javascript">
+        // Carousel
+        document.addEventListener('DOMContentLoaded', function(e) {
+            var carousel = new ch.Carousel(ch('.demo-carousel')[0]);
+        });
+    </script>
 </body>
 </html>

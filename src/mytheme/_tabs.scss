@@ -13,11 +13,32 @@ $num-of-tabs: 2;
     background-color: #aaa;
     color: #000;
     cursor: pointer;
+    margin-left: 30px;
     padding: 5px 20px;
+    position: relative;
+    &::after {
+        border-bottom: 25px solid #aaa;
+        border-right: 11px solid transparent;
+        content: "";
+        height: 0;
+        position: absolute;
+        top: 0;
+        right: -10px;
+        width: 0;
+    }
+}
+
+.tabs__label[for='myTab1'] {
+    margin: 0;
 }
 
 .tabs__content {
+    background-color: #eee;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
     display: none;
+    margin-top: 2px;
+    padding: 10px;
 }
 
 @for $i from 1 through $num-of-tabs {
